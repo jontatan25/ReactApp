@@ -1,9 +1,14 @@
+import CartWidget from "./CartWidget"
 
-
-const Nav  = () => {
+const Nav  = (props) => {
+    const  {nombre,apellido} = props
     return(
             <header>
+            <div>
+                <CartWidget/>
             <h1>PhotoKua</h1>
+            </div>
+            <h2>Bienvenido {nombre+ " "+apellido}</h2>
             <nav>
                <ul>
                    <li>Servicios</li>
@@ -12,8 +17,7 @@ const Nav  = () => {
                    <li>Contáctanos</li>
                </ul>
             </nav>
-        </header>
-            
+        </header>           
     )
 }
 export default Nav

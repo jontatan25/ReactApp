@@ -1,4 +1,7 @@
-
+html,body {
+    margin:0;
+    padding:0;
+    }
 
 ul { 
     display: flex;
@@ -24,3 +27,11 @@ li:hover {
     background-color: rgb(131, 221, 224);
     cursor: pointer;
 }
+
+ header div {display: flex;
+background-color: cadetblue;}
+h1 { 
+    margin-left: 100px;
+}
+
+header div img {padding: 10px;}

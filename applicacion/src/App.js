@@ -3,7 +3,7 @@ import Nav from "./Nav"
 const App  = () => {
     return(
         <>
-        <Nav/>
+        <Nav nombre= "Carlos" apellido = "sanchez"/>
         </>
     )
 }
