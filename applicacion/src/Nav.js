@@ -1,14 +1,14 @@
 import CartWidget from "./CartWidget"
+import ItemList from "./assests/ItemListContainer"
 
-const Nav  = (props) => {
-    const  {nombre,apellido} = props
+const Nav  = () => {
     return(
             <header>
             <div>
                 <CartWidget/>
             <h1>PhotoKua</h1>
             </div>
-            <h2>Bienvenido {nombre+ " "+apellido}</h2>
+            <ItemList nombre= "Carlos" apellido = "Perez"/>
             <nav>
                <ul>
                    <li>Servicios</li>
