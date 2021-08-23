@@ -8,7 +8,7 @@ const Nav  = () => {
                 <CartWidget/>
             <h1>PhotoKua</h1>
             </div>
-            <ItemList nombre= "Carlos" apellido = "Perez"/>
+            
             <nav>
                <ul>
                    <li>Servicios</li>
@@ -17,6 +17,7 @@ const Nav  = () => {
                    <li>Contáctanos</li>
                </ul>
             </nav>
+            <ItemList nombre= "Carlos" apellido = "Perez"/>
         </header>           
     )
 }
