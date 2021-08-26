@@ -1,7 +1,6 @@
 import {useState,useEffect} from "react"
 
 let stock = 5;
-let numeroInicial = 1;
 
 const ItemCount  = () => {
 
