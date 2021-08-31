@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-import ItemList from "./assests/ItemListContainer"
+import ItemListContainer from "./assests/ItemListContainer"
 
 const Nav  = () => {
     return(
@@ -17,7 +17,7 @@ const Nav  = () => {
                    <li>Contáctanos</li>
                </ul>
             </nav>
-            <ItemList nombre= "Carlos" apellido = "Perez"/>
+            <ItemListContainer nombre= "Carlos" apellido = "Perez"/>
         </header>           
     )
 }
