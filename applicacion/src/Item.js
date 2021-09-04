@@ -1,9 +1,9 @@
 
 const Item= (props) => {
-  const  {title,price,pictureUrl} = props
+  const  {id,title,price,pictureUrl} = props
   return(
       <>
-          <li>{title}{price}{pictureUrl}</li>
+          <li id={id}>{title}{price}{pictureUrl}</li>
       </>
   )
 }

@@ -41,3 +41,11 @@ h1 {
 }
 
 header div img {padding: 10px;}
+
+#i1 {
+    background-color: rgb(91, 86, 124);
+}
+
+#i1:hover {
+    background-color: aqua;
+}

@@ -2,7 +2,7 @@
 import {useState, useEffect} from "react"
 import ItemDetail from "./ItemDetail"
 
-function getItems (){
+function ItemDetailContainer (){
 
     const [item,setItem] = useState(1)
 
@@ -10,9 +10,9 @@ function getItems (){
       return new Promise((res, rej) => {
         setTimeout(() =>
           res([
-            {id: 1, title:'---productouno---',
-              price: " *precio: 50*      ",
-              pictureUrl: "Picture URL"},
+            {id: 'i1', dtitle:'Detalle1',
+              dprice: " *Detalle2*      ",
+              dpictureUrl: "Picture URL"},
           ]), 2000
         )
       })
@@ -26,8 +26,7 @@ function getItems (){
     return item === 1 ? (
       <p>cargando</p>
     ) : (<ol>
-        {item.map(it => <Item title={it.title} price={it.price} pictureUrl={it.pictureUrl}/> )}
+        {item.map(it => <ItemDetail dId={it.id}dtitle={it.dtitle} dprice={it.dprice} dpictureUrl={it.dpictureUrl}/> )}
         </ol>)
 }
-export default ItemList
-  return getItems
+export default ItemDetailContainer

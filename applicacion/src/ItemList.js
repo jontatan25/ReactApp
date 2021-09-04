@@ -32,7 +32,7 @@ function ItemList (){
     return item === 1 ? (
       <p>cargando</p>
     ) : (<ol>
-        {item.map(it => <Item title={it.title} price={it.price} pictureUrl={it.pictureUrl}/> )}
+        {item.map(it => <Item id={it.id}title={it.title} price={it.price} pictureUrl={it.pictureUrl}/> )}
         </ol>)
 }
 export default ItemList
