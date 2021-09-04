@@ -1,12 +1,11 @@
 
 
-function ItemDetail(){
+function ItemDetail(props){
 
+    const  {dTitle,dprice,dpictureUrl} = props
     return(
         <>
-            <li>Descripcion</li>
-            <li>Foto</li>
-            <li>Precio</li> 
+            <li>{dTitle}{dprice}{dpictureUrl}</li>
         </>
     )
   }

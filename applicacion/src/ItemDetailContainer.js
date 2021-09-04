@@ -23,20 +23,11 @@ function getItems (){
       })
     },[])
 
-    return getItems === 1 ? (
+    return item === 1 ? (
       <p>cargando</p>
     ) : (<ol>
-           <ItemDetail/>
+        {item.map(it => <Item title={it.title} price={it.price} pictureUrl={it.pictureUrl}/> )}
         </ol>)
-
-    function ItemDetailContainer (){
-    promesaEj.then(response => {
-    const valorParseado = response.json()
-    return valorParseado
-    }
-    .then(json=> console.log (ItemDetailContainer)
-    
 }
-promesaEj.then(json=> console.log (JSON)
-
-export default getItems
+export default ItemList
+  return getItems
